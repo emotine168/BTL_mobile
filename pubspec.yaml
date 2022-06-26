@@ -1,0 +1,51 @@
+name: store_app
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+# The following adds the HERE SDK for Flutter plugin folder to your application.
+  here_sdk:
+    path: plugins/here_sdk
+
+  cupertino_icons: ^1.0.1
+  flutter_svg: ^0.21.0+1
+  get: ^4.1.4
+  http: ^0.13.1
+  intl: ^0.17.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/images/phone/
+    - assets/images/laptop/
+    - assets/images/tablet/
+    - assets/images/accessories/
+    - assets/images/watch/
+
+
+  fonts:
+    - family: Schyler
+      fonts:
+        - asset: assets/fonts/muli/Muli.ttf
+        - asset: assets/fonts/muli/Muli-Bold.ttf
+          style: italic
